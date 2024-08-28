@@ -1,0 +1,301 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  paddding: 0;
+  margin: 0;
+}
+/*Navbar*/
+.navbar{
+  display: flex;
+  overflow: hidden;
+  background-color: darkslategray;
+}
+.navbar a{
+  color: whitesmoke;
+  text-decoration: none;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 25px;
+}
+.dropdown{
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn{
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: whitesmoke;
+  padding: 25px;
+  background-color: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus{
+  background-color: whitesmoke;
+  color: black;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a{
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover{
+  background-color: whitesmoke;
+}
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+/*Slider*/
+.slider{
+  width: 100%;
+  overflow: hidden;
+}
+.slides{
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slide{
+  box-sizing: border-box;
+  min-width: 100%;
+}
+.slider img{
+  width: 100%;
+}
+.nav-btn{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  background: black;
+  color: whitesmoke;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.prev{
+  left: 10px;
+}
+.next{
+  right: 10px;
+}
+/*Main content*/
+.main-content{
+  display: flex;
+  padding: 20px;
+}
+.products{
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  gap: 20px;
+}
+.product-card{
+  background-color: whitesmoke;
+  border: 1px solid darkslategray;
+  padding: 20px;
+  width: 30%;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.3s, background-color 0.3s;
+}
+.product-card img{
+  max-width: 100%;
+  height: auto;
+}
+.product-card a{
+  color: black;
+}
+.product-card:hover{
+  background-color: lightgray;
+  transform: scale(1.05);
+}
+a:link{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+/*Sidebar*/
+.sidebar{
+  flex: 1;
+  background-color: whitesmoke;
+  padding: 20px;
+  margin-left: 20px;
+}
+.sidebar h2{
+  margin-top: 0px;
+}
+.sidebar ul{
+  list-style-type: none;
+  padding: 0;
+}
+.sidebar ul li{
+  margin: 10px;
+}
+.sidebar ul li a{
+  color: cadetblue;
+  text-decoration: none;
+}
+.sidebar ul li a:hover{
+  text-decoration: underline;
+}
+/*Video section*/
+.video-section{
+  paddding: 20px;
+  text-align: center;
+}
+.video-wrapper{
+  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 50%;
+  position: relative;
+  height: 0;
+}
+.video-wrapper iframe{
+  height: 100%;
+  width: 100%;
+  border: 5px solid black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.more-content{
+  padding: 20px;
+}
+.more-content h2{
+  margin-top: 0px;
+}
+.more-content ul{
+  list-style-type: none;
+  padding: 0;
+}
+.more-content ul li{
+  margin: 10px;
+  color: cadetblue;
+}
+/*Footer*/
+.footer{
+  background-color: darkslategray;
+  color: whitesmoke;
+  padding: 20px;
+  text-align: center;
+}
+.footer-content{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.footer-section{
+  flex: 1;
+  margin: 10px;
+}
+.footer-section h3{
+  margin-top: 0px;
+}
+.footer-section p, .footer-section ul{
+  margin: 0;
+}
+.footer-section ul{
+  list-style-type: none;
+  padding: 0;
+}
+.footer-section ul li{
+  margin: 10px;
+}
+.footer-section ul li a{
+  color: whitesmoke;
+  text-decoration: none;
+}
+.footer-section ul li a:hover{
+  text-decoration: underline;
+}
+footer-bottom{
+  background-color: darkslategray;
+  text-align: center;
+  color: whitesmoke;
+  padding: 10px;
+  margin-top: 20px;
+}
+.footer-bottom a{
+  color: whitesmoke;
+  text-decoration: none;
+}
+.footer-bottom a:hover{
+  text-decoration: underline;
+}
+/*Harry Potter main*/
+.hp_wrapper{
+  padding: 50px;
+  background-image: url("hp page background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*Percy Jackson main*/
+.pj_wrapper{
+  padding: 50px;
+  background-image: url("pj page background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*Cruel Prince main*/
+.cp_wrapper{
+  padding: 50px;
+  background-image: url("cp page background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*Shadow and Bone main*/
+.sb_wrapper{
+  padding: 50px;
+  background-image: url("grishaverse map.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*Six of Crows main*/
+.sc_wrapper{
+  padding: 50px;
+  background-image: url("grishaverse map.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*King of Scars*/
+.ks_wrapper{
+  padding: 50px;
+  background-image: url("grishaverse map.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*Page body*/
+.main_body{
+  padding: 32px;
+  background-color: white;
+  opacity: 0.9;
+  text-align: justify;
+  font-size: 20px;
+}
+.main_body h1{
+  text-align: center;
+  font-size: 60px;
+}
+.main_body img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main_body img:hover{
+  scale: 1.075;
+  cursor: pointer;
+}
